@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三欄式排版</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      min-width: 600px;
+      max-width: 960px;
+      background: beige;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+    }
+
+    header, footer {
+      width: 100%;
+      background: #eaeaea;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      height: 300px;
+      margin: 20px 0;
+    }
+
+    .left, .center, .right {
+      padding: 20px;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .left {
+      width: 28%;
+      background: rgb(243, 105, 151);
+    }
+
+    .center {
+      width: 40%;
+      background: deepskyblue;
+    }
+
+    .right {
+      width: 28%;
+      background: rgb(9, 129, 63);
+    }
+  </style>
+</head>
+<body>
+
+  <header><h1>頁首</h1></header>
+
+  <div class="container">
+    <div class="left">區塊1</div>
+    <div class="center">區塊2</div>
+    <div class="right">區塊3</div>
+  </div>
+
+  <footer><h1>頁尾</h1></footer>
+
+</body>
+</html>
